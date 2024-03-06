@@ -5,6 +5,7 @@ import App from "./App";
 import store from "./store";
 
 store.dispatch({ type: "account/deposit", payload: 500 });
+store.dispatch({ type: "pay/Loan", payload: 2000 });
 console.log(store.getState());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
